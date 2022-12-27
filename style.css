@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(315deg, #0066ff, #00ffcc);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    background-color: #eee;
+    padding: 10px 24px;
+    border-radius: 20px;
+    width: 490px;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 0.5em;
+    font-family: sans-serif;
+}
+
+.container .box{
+    width: 100%;
+    display: flex;
+
+}
+
+.box div{
+    width: 100%;
+}
+
+select{
+    width: 95%;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgba(238, 238, 238, 0.791);
+    outline: none;
+    color: #000;
+    margin: 0.2em 0;
+    padding: 0 1em;
+    border-radius: 10px;
+    border: 1px solid #0066ff;
+}
+
+input{
+    width: 95%;
+    height: 40px;
+    font-size: 1em;
+    margin: 0.2em 0;
+    border-radius: 10px;
+    border: none;
+    background: #cccccc;
+    outline: none;
+    padding: 0 1em;
+    
+}
+
+.btn{
+    width: 96%;
+    height: 40px;
+    background: #364547;
+    color: #eee;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em 0;
+
+}
+
+.btn:hover{
+    background: #262e2f;    
+    font-size: 1.01em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
