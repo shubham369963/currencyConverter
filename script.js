@@ -3,6 +3,7 @@ const btn = document.getElementById("btn");
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 
+
 fetch("https://api.frankfurter.app/currencies")
 .then((data) => data.json())
 .then((data) =>{
@@ -10,6 +11,7 @@ fetch("https://api.frankfurter.app/currencies")
 });
 
 function display(data){
+    
     const entries = Object.entries(data);
     for(var i=0; i<entries.length ; i++){
         select[0].innerHTML +=`<option value="${entries[i][0]}" >${entries[i][0]}</option>`;
@@ -17,7 +19,7 @@ function display(data){
     }
 }
 
-btn.addEventListener("click", ()=>{
+btn.addEventListener("click",()=>{
     let currency1 = select[0].value;
     let currency2 = select[1].value;
 
